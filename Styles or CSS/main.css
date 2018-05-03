@@ -25,17 +25,17 @@ h2 {
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 100px;
+    max-width: 50%;
 }
 
 header, footer, footer a {
     text-align: center;
-    background-color:#ffffff;
+    background-color:#ff69b4;
     color: whitesmoke;
 }
 
 header img {
-    width: 100%;
+    width: 20%;
     height: auto;
     float: right;
 }
