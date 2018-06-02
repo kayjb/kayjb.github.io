@@ -1,0 +1,102 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  width: auto;
+}
+
+header, nav, main, footer { 
+  max-width: 100%; 
+}
+
+header {
+    margin-top: 10px;
+    width: 100%;
+}
+.sky{
+    width: 100%;
+}
+
+.logo{
+    position: relative;
+    bottom: 280px;
+    width: 200px;
+    height: 200px;
+    float: left;
+    top: 20px;
+}
+
+.sun{
+    position: relative;
+    width: 30px;
+    height:30px;
+    left: 10px;
+}
+.forecast{
+    position: relative;
+    top: 20px;
+    border: 1px solid #000000;
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    background-color: #fffdd0;
+    
+}
+.article{
+    position: relative;
+    top: 20px;
+}
+
+header h1 {}
+header img {
+}
+header .subheading {}
+
+nav {
+    background-color: #fffdd0;
+}
+nav button {}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #ffdb9a;
+}
+nav ul li {
+    float: left;
+    text-align: center;
+    letter-spacing: normal;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #fffdd0;
+}
+nav ul li a:hover {
+    background-color: #d0eaff;
+}
+
+main {
+    width:auto;
+    background-color: #ffffff;
+    padding: 0;
+}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; } /*code from udemy width: 100%; margin: 0;*/
+main figure.landscape img {width: 100%;}
+
+footer {
+    text-align: center;
+    background-color: #ffdb9a;
+    padding: 30px;
+}

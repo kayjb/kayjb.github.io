@@ -5,5 +5,7 @@
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
     
     section.forecast { display: .forecast }  /* show the 10-day forecast with the medium view and up */
+    
+    .navigation.responsive{display:none;}
 
   }
