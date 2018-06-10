@@ -1,0 +1,24 @@
+@media only screen and (min-width: 64em) {
+    header, nav, main, footer{
+        max-width: 64rem;
+        margin: auto;
+    }
+    button { display: none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    section.forecast { display: block; flex-wrap: wrap;
+    text-align: center;
+    background-color: #fffdd0;
+    padding: 20px;
+    margin: 40px;}  /* show the 10-day forecast with the medium view and up */
+    
+    nav ul{
+        flex-direction: row;
+    }
+    .column {
+    flex: 50%;
+    }
+    
+    .imagegrid{
+        flex: 33.33%;
+    }
+  }

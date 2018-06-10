@@ -1,0 +1,141 @@
+
+@media only screen and (min-width: 1em)
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  width: auto;
+}
+
+header, nav, main, footer { 
+  width: 100%; 
+}
+
+header {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.logo{
+    position: relative;
+    /*flex: 0 1 128px;*/
+    float:left;
+    bottom: 280px;
+    width: 200px;
+    height: 200px;
+    top: -40px;
+}
+.row {
+    display: flex;
+    background-color: aliceblue;
+}
+
+.column{
+    display: grid;
+    border: 2px dotted black;
+    /*why are my columns to the left of my content?*/
+}
+.sun{
+    position: relative;
+    width: 30px;
+    height:30px;
+    left: 10px;
+}
+.forecast{
+    display: none;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #fffdd0;
+    padding: 20px;
+    margin: 40px;
+    
+}
+.article{
+    position: relative;
+    top: 20px;
+}
+
+.image{
+    max-width: 100%;
+    height: auto;
+}
+table, thead, tr, th{
+    border: 1px solid black;
+    padding: 15px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.imagegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 0 auto;
+    position: relative;
+    left: 150px;
+}
+
+.imagegrid a:hover{
+    box-shadow: 0 1px 8px black;
+    
+}
+
+nav {
+    background-color: #fffdd0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #ffdb9a;
+    display: flex;
+    flex-direction: column;
+}
+nav ul li {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: normal;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #fffdd0;
+}
+nav ul li a:hover {
+    background-color: #000000;
+}
+
+main {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0;
+}
+
+main figure { margin: 0 0 .2rem 2%; width:96%; } /*code from udemy width: 100%; margin: 0;*/
+main figure.landscape img {width: 100%;}
+.contact{
+    background-color: #ffdb9a;
+    padding: 10px;
+}
+.footer-bar{
+    padding: 10px;
+    margin-bottom: -30px;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+}
