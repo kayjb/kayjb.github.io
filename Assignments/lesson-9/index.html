@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>The Sky Weather | Franklin City</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The site that offers every day weather coverage.">
+    <link href="css/normalize9.css" type="text/css" rel="stylesheet">
+    <link href="css/main-9.css" type="text/css" rel="stylesheet">
+    <link href="css/medium-9.css" type="text/css" rel="stylesheet">
+    <link href="css/large-9.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+      <img class="logo" src="images/weather-logo-transparent.png" alt="logo"> 
+      <h1>The Sky Weather Site</h1>
+      <h2>Your everyday weather center</h2> 
+  </header>
+
+  <nav class="clearfix">
+      <button>&#9776;</button>
+    <ul>
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin-7.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+        <li><a href="../lesson-9/JSONtutorial.html">JSON</a></li>
+    </ul>		
+  </nav>
+    
+  <main class="clearfix">
+      <section class="story">
+          
+        <div id="storytext">
+         <h1>Weather Story</h1>
+         <p>Add a paragraph here about the current weather, or a story about the weather.</p>
+        </div>
+          
+        <div id="storypic">
+        <img src="images/gallery2sq.jpg">  
+        </div>
+          
+      </section>
+      
+      <section class="towns">
+        
+      <div id="franklinhome">
+          <h1><span class="name"></span></h1>
+          <p><span>Town Motto: </span><span class="motto"></span></p>
+          <p><span>Year Founded: </span><span class="yearFounded"></span></p>
+          <p><span>Population: </span><span class="currentPopulation"></span></p>
+          <p><span>Annual Rainfall: </span><span class="averageRainfall"></span></p>
+          <img src="images/gallery3sq.jpg" alt=temp>
+          
+      </div>
+      
+      <div id="greenvillehome">
+          <h1><span class="name"></span></h1>
+          <p><span>Town Motto: </span><span class="motto"></span></p>
+          <p><span>Year Founded: </span><span class="yearFounded"></span></p>
+          <p><span>Population: </span><span class="currentPopulation"></span></p>
+          <p><span>Annual Rainfall: </span><span class="averageRainfall"></span></p>
+          <img src="images/gallery4sq.jpg" alt=temp2>
+      </div>
+      
+      <div id="springfieldhome">
+          <h1><span class="name">Springfield</span></h1>
+          <p><span>Town Motto: </span><span class="motto">Where everyone is lifted.</span></p>
+          <p><span>Year Founded: </span><span class="yearFounded">1826</span></p>
+          <p><span>Population: </span><span class="currentPopulation">17852</span></p>
+          <p><span>Annual Rainfall: </span><span class="averageRainfall">17</span></p>
+          
+          <img src="images/gallery6sq.jpg" alt=temp3>
+      </div>
+      </section>
+      
+    
+  </main>
+    
+  <footer>
+    <div class="contact">
+      The Sky <br>
+      123 Storm Ave. <br> 
+      Salt Lake City, UT 84044<br>
+      999.999.9999<br>
+      contact@thesky.com<br>
+    </div>
+      <div class="footer-bar">&copy;2018 | All Rights Reserved | The Sky Weather Site | <span id="currentdate">5/26/2018 |</span> Weather Data courtesy of <a href="https://openweathermap.org/">OpenWeatherMap.org</a>
+      </div>
+  </footer>
+    <script src="js/date.js"></script>
+    <script src="js/townData.js"></script>
+</body>
+</html>
