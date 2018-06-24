@@ -38,12 +38,7 @@ header {
     border: 2px solid black;
     /*why are my columns to the left of my content?*/
 }
-.sun{
-    position: relative;
-    width: 30px;
-    height:30px;
-    left: 10px;
-}
+
 .forecast{
     display: none;
     flex-wrap: wrap;
