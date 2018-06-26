@@ -3,7 +3,7 @@
         max-width: 64rem;
         margin: auto;
     }
-    button { display: none; }  /* hamburger button does not need to be shown in the medium on up views */
+    nav button { display: none; }  /* hamburger button does not need to be shown in the medium on up views */
     
     .ten { 
     display: inline-block; 

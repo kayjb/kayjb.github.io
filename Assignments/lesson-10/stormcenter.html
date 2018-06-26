@@ -34,7 +34,7 @@
         <form method="get" action=thankyou.html>
             <fieldset>
             <legend>Personal Information</legend>
-                <label class="top">Name*<input type="text" name="fullname" pattern="[A-Za-z]{5}" required></label>
+                <label class="top">Name*<input type="text" name="fullname" pattern="[A-Za-z]{5,}" required></label>
                 <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
                 <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
                 <label class="top">Zip Code*<input type="number" name="zipcode" placeholder="12345" required></label>
@@ -56,7 +56,7 @@
                 
                 <label class="bottom">Storm Severity</label>
                 <label for="rating" class="bottom">Rating (1 to 10)</label>
-		          <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		          <input type="range" id="rating" value="5, " min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 		          <span id="ratingvalue">5</span><br>
                 
             <label class="bottom">Storm Region
@@ -92,10 +92,9 @@
       999.999.9999<br>
       contact@thesky.com<br>
     </div>
-    <div class="footer-bar">&copy;2018 | All Rights Reserved | The Sky Weather Site | <span id="currentdate">5/26/2018</span>
+    <div class="footer-bar">&copy;2018 | All Rights Reserved | The Sky Weather Site | <span id="contactdate"></span>
       </div>
   </footer>
-   <script src="js/windchill.js"></script>
     <script src="js/date.js"></script>
 </body>
 </html>

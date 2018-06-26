@@ -20,8 +20,8 @@
   </header>
 
   <nav class="clearfix">
-      <button>&#9776;</button>
-    <ul>
+      <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="navigationList" class>
     	<li><a href="index.html">Home</a></li>
     	<li><a href="franklin-10.html">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
@@ -89,10 +89,11 @@
       999.999.9999<br>
       contact@thesky.com<br>
     </div>
-      <div class="footer-bar">&copy;2018 | All Rights Reserved | The Sky Weather Site | <span id="currentdate">5/26/2018 |</span> Weather Data courtesy of <a href="https://openweathermap.org/">OpenWeatherMap.org</a>
+      <div class="footer-bar">&copy;2018 | All Rights Reserved | The Sky Weather Site | <span id="contactdate"></span>| Weather Data courtesy of <a href="https://openweathermap.org/">OpenWeatherMap.org</a>
       </div>
   </footer>
     <script src="js/date.js"></script>
     <script src="js/townData.js"></script>
+    <script src="js/toggleMenu.js"></script>
 </body>
 </html>
