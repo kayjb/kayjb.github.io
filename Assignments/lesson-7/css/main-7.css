@@ -98,6 +98,7 @@ nav ul {
     background-color: #ffdb9a;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 nav ul li {
     display: inline-flex;
@@ -118,6 +119,7 @@ nav ul li.active a {
 nav ul li a:hover {
     background-color: #000000;
 }
+
 
 main {
     width: 100%;
