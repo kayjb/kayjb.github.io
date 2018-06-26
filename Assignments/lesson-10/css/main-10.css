@@ -8,6 +8,7 @@ body {
   width: auto;
 }
 
+
 header, nav, main, footer { 
   max-width: 100%;
   margin: auto;
@@ -192,9 +193,6 @@ main figure.landscape img {width: 100%;}
 
 /*-----storm center-----*/
 
-body{
-    text-align: right;
-}
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #d0eaff;
