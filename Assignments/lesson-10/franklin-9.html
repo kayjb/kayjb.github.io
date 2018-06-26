@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>The Sky Weather | Franklin City</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The site that offers every day weather coverage.">
+    <link href="css/normalize9.css" type="text/css" rel="stylesheet">
+    <link href="css/main-9.css" type="text/css" rel="stylesheet">
+    <link href="css/medium-9.css" type="text/css" rel="stylesheet">
+    <link href="css/large-9.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+      <img class="logo" src="images/weather-logo-transparent.png" alt="logo"> 
+      <h1>The Sky Weather Site</h1>
+      <h2>Your everyday weather center</h2> 
+  </header>
+
+  <nav class="clearfix">
+      <button>&#9776;</button>
+    <ul>
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin-9.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+        <li><a href="../lesson-9/JSONtutorial.html">JSON</a></li>
+    </ul>		
+  </nav>
+    
+  <main class="clearfix">
+      <div class="row">
+          <!--column 1-->
+        <div class="column"></div>
+          <section class="weather-summary">
+            <h2>Today's Forecast</h2>
+            <p>
+            Current Temperature: 
+            <span class="current-temp">82.4 &deg;F</span> 
+            </p>  
+            
+            <p>
+            Current Conditions: 
+            <span class="condition">Clear Sky</span>
+            </p>
+              
+            <p> High:
+            <span class="high-temp">82.4 &deg;F</span>  
+            </p>
+              
+            <p> Low:
+            <span class="low-temp">82.4 &deg;F</span>  
+            </p>
+              
+            <p> Windspeed: 
+            <span class="windspeed">5.82</span>  
+            </p>
+            
+            <picture>
+            <img class="icon" src="https://openweathermap.org/img/w/01n.png" alt="icon">
+            </picture>
+            
+      
+            <!--<div class="highlow">
+                <p>High: <span id="high">80</span>&deg;F</p>  
+                <p>Low: <span id="low">65</span>&deg;F</p>  
+            </div>
+      
+            <div class="current">
+                Sunny
+            </div>  
+            
+            <div class="conditions">
+                <p>Precipitation: 10%</p>  
+                <p>Wind Speed: <span id="wind"></span>10mph</p>  
+            </div>-->          
+            </section>
+          <!--column 2-->
+            <div class="column"></div>
+                <article class="article">
+                    <h3>Franklin Breaks Record</h3>	
+                        <img src="images/city.jpg" alt="city">
+                        <p class="town-article">Franklin weather is expected to take a turn for the worst. Take a look <a href="https://www.wunderground.com/news/2018-06-07-us-high-tide-flooding-increases-noaa">here.</a></p>
+                </article>
+            </div>
+      
+        <img src="images/mages/franklin-crop.jpg" alt="mountain" class="image" sizes="100vw"
+            srcset="images/franklin-small.jpg 200w, images/franklin-medium.jpg 400w, images/franklin-large.jpg 800w">
+      
+      
+        <!--<section class="weather-summary">
+            <h2>Today's Forecast</h2>
+        <picture>
+            <img class="sun" src="Images/sun.jpg" alt="sun">
+        </picture>
+      
+            <div class="highlow">
+                <p>High: <span id="high">80</span>&deg;F</p>  
+                <p>Low: <span id="low">65</span>&deg;F</p>  
+            </div>
+      
+            <div class="current">
+                Sunny
+            </div>  
+            
+            <div class="conditions">
+                <p>Precipitation: 10%</p>  
+                <p>Wind Speed: <span id="wind"></span>10mph</p>  
+            </div>           
+            </section>-->
+        
+    <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+      
+    <!--<article class="article">
+      <h3>Franklin Breaks Record</h3>	
+      <img src="Images/city.jpg" alt="city">
+      <p class="town-article">Franklin weather is expected to take a turn for the worst. Take a look <a href="https://www.wunderground.com/news/2018-06-07-us-high-tide-flooding-increases-noaa">here.</a>
+      </p>
+    </article>	-->	  
+  
+  </main>
+    
+  <footer>
+    <div class="contact">
+      The Sky <br>
+      123 Storm Ave. <br> 
+      Salt Lake City, UT 84044<br>
+      999.999.9999<br>
+      contact@thesky.com<br>
+    </div>
+    <div class="footer-bar">&copy;2018 | All Rights Reserved | The Sky Weather Site | <span id="currentdate">5/26/2018 | </span>Weather Data courtesy of <a href="https://openweathermap.org/">OpenWeatherMap.org</a>
+      </div>
+  </footer>
+    <script src="js/date.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>

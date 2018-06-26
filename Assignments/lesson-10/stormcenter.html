@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>The Sky Weather | Franklin City</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The site that offers every day weather coverage.">
+    <link href="css/normalize9.css" type="text/css" rel="stylesheet">
+    <link href="css/main-9.css" type="text/css" rel="stylesheet">
+    <link href="css/medium-9.css" type="text/css" rel="stylesheet">
+    <link href="css/large-9.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+  <header> 
+      <h1>The Storm Center</h1> 
+  </header>
+    
+<nav>
+    <ul>
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin-9.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+        <li><a href="../lesson-9/JSONtutorial.html">JSON</a></li>
+    </ul>    
+</nav>
+    
+<main>
+<h1>Storm Information</h1>
+        <form method="get" action=thankyou.html>
+            <fieldset>
+            <legend>Personal Information</legend>
+                <label class="top">Name*<input type="text" name="fullname" pattern="[A-Za-z]{5}" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Zip Code*<input type="number" name="zipcode" placeholder="12345" required></label>
+                <label class="top">Storm Date<input type="date" name="date"></label>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Storm Information</legend>
+            <label class="bottom">Storm Type<input list="browsers">
+            <datalist id="browsers"> 
+                <option value="">Please Select &#9662;</option>
+                <option value="Flash Flood">Flash Flood</option>
+                <option value="Hail">Hail</option>
+                <option value="Hurricane">Hurricane</option>
+                <option value="Thunderstorm">Thunderstorm</option>
+                <option value="Tornado">Tornado</option>
+                </datalist>
+            </label>
+                
+                <label class="bottom">Storm Severity</label>
+                <label for="rating" class="bottom">Rating (1 to 10)</label>
+		          <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		          <span id="ratingvalue">5</span><br>
+                
+            <label class="bottom">Storm Region
+            <select name="subject"> 
+                <option value="">Select Region &#9662;</option>
+                <option value="franklin">Franklin</option>
+                <option value="greenville">Greenville</option>
+                <option value="springfield">Springfield</option>
+                </select>
+                </label>
+                
+                
+                 <div>User In-Danger Level</div>
+                <label class="bottom"><input type="radio" name="audience" value="yes">Yes</label>
+                <label class="bottom"><input type="radio" name="audience" value="maybe">Maybe</label>
+                <label class="bottom"><input type="radio" name="audience" value="no">No</label>
+                
+                <div>Additional Comments:</div>
+                <textarea rows="4" cols="50" class="text"></textarea>
+            </fieldset>
+            
+            <input type="submit" value="Enter Information" class="submit">
+    
+    
+    </form>    
+
+</main>
+    <footer>
+       <div class="contact">
+      The Sky <br>
+      123 Storm Ave. <br> 
+      Salt Lake City, UT 84044<br>
+      999.999.9999<br>
+      contact@thesky.com<br>
+    </div>
+    <div class="footer-bar">&copy;2018 | All Rights Reserved | The Sky Weather Site | <span id="currentdate">5/26/2018</span>
+      </div>
+  </footer>
+   <script src="js/windchill.js"></script>
+    <script src="js/date.js"></script>
+</body>
+</html>

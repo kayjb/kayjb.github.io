@@ -1,0 +1,83 @@
+@media only screen and (min-width: 64rem) {
+    header, nav, main, footer{
+        max-width: 64rem;
+        margin: auto;
+    }
+    button { display: none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    .ten { 
+    display: inline-block; 
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 40px;
+    margin: 40px;
+    }  /* show the 10-day forecast with the medium view and up */
+    
+    .table{
+        border: 1px solid black;
+        width: 100%;
+    }
+    
+    .table th{
+        border: 1px solid black;
+        width: 1%;
+        height: 30px;
+        background-color: #fffdd0;
+    }
+    
+    
+    nav ul{
+        flex-direction: row;
+    }
+    
+    nav ul li a{
+        padding: .6rem 1rem;
+    }
+    
+    body{
+        margin: 0 auto;
+        max-width: 65rem;
+        text-align: center;
+    }
+/*----franklin----*/
+    
+    nav{
+        font-size:18px;
+        width: auto;
+        text-align: center;
+    }
+    
+    nav ul{
+        max-width: 64rem; 
+    }
+    main.banner{
+        width: 95%;
+    }
+    
+    section.forecast{
+        clear: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    section.contact{
+        clear: right;
+    }
+    
+/*---gallery---*/ 
+    .column {
+    flex: 50%;
+    }
+    
+    .imagegrid{
+        flex: 33.33%;
+    }
+    
+    .bottom{
+        padding: .4rem 0;
+    }
+    
+    footer{
+        width: 100%;
+    }
+  }

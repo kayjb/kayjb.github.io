@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>The Sky Weather | Franklin City</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The site that offers every day weather coverage.">
+    <link href="css/normalize10.css" type="text/css" rel="stylesheet">
+    <link href="css/main-10.css" type="text/css" rel="stylesheet">
+    <link href="css/medium-10.css" type="text/css" rel="stylesheet">
+    <link href="css/large-10.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+      <img class="logo" src="images/weather-logo-transparent.png" alt="logo"> 
+      <h1>The Sky Weather Site</h1>
+      <h2>Your everyday weather center</h2> 
+  </header>
+
+  <nav class="clearfix">
+      <button>&#9776;</button>
+    <ul>
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin-10.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+        <li><a href="../lesson-9/JSONtutorial.html">JSON</a></li>
+    </ul>		
+  </nav>
+    
+  <main class="clearfix">
+      
+      <picture class="banner">
+        <source media="(min-width: 64rem)" srcset="images/franklin-crop%20new%20large.jpg">
+        <source media="(min-width: 37.5rem)" srcset="images/franklin-crop-new-medium.jpg">
+        <img src="images/franklin-crop-new-small.jpg" alt="franklin banner">
+      </picture>
+      
+      <div>
+          <section class="weather-summary">
+            <h3>TODAY'S FORECAST</h3>
+            <p id="currenttemp">
+            Current Temperature: 
+            <span class="current-temp">82.4 &deg;F</span> 
+            </p>  
+            
+            <p id="conditions">
+            Current Conditions: 
+            <span class="condition">Clear Sky</span>
+            </p>
+              
+            <p id="high"> High:
+            <span class="high-temp">82.4 &deg;F</span>  
+            </p>
+              
+            <p id="low"> Low:
+            <span class="low-temp">82.4 &deg;F</span>  
+            </p>
+              
+            <p id="windspeed"> Windspeed: 
+            <span class="windspeed">5.82</span>  
+            </p>
+            
+            <picture>
+            <img class="icon" src="https://openweathermap.org/img/w/01n.png" alt="icon">
+            </picture>         
+            </section>
+      </div>
+          
+    <div class="article">
+            <h3>FRANKLIN BREAKS RECORD</h3>	
+                <img src="images/franklin%20summer.jpg" alt="city" class=articlepic>
+                    <p class="town-article">As sizzling temps and swampy humidity hung over much of the state,<br> weather officials issued an excessive heat warning for the seven-<br>county metro area that extended into Monday evening. <br>
+
+                    <br>Meteorologists warned that “heat illnesses are likely,” with children, <br>the elderly and those active outdoors especially at risk.<br>
+
+                    <br>Temperatures came down rapidly Monday <br>evening when severe storms crashed into parts of the metro,<br> but the storms also disrupted outdoor holiday plans.<br> <br>Read the rest <a href="http://www.startribune.com/record-breaking-heat-hangs-over-minnesota-on-memorial-day/483878341/">here.</a></p>
+      </div>
+      
+    <section class="ten">
+      <h3>TEN DAY FORECAST</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+      </section>	  
+  
+  </main>
+    
+  <footer>
+    <div class="contact">
+      The Sky <br>
+      123 Storm Ave. <br> 
+      Salt Lake City, UT 84044<br>
+      999.999.9999<br>
+      contact@thesky.com<br>
+    </div>
+    <div class="footer-bar">&copy;2018 | All Rights Reserved | The Sky Weather Site | <span id="currentdate">5/26/2018 | </span>Weather Data courtesy of <a href="https://openweathermap.org/">OpenWeatherMap.org</a>
+      </div>
+  </footer>
+    <script src="js/date.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>

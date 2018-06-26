@@ -1,0 +1,303 @@
+
+@media only screen and (min-width: 1em)
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  width: auto;
+}
+
+header, nav, main, footer { 
+  max-width: 100%;
+  margin: auto;
+}
+
+header {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+.logo{
+    position: relative;
+    /*flex: 0 1 128px;*/
+    float:left;
+    bottom: 280px;
+    width: 200px;
+    height: 200px;
+    top: 5px;
+    right: -80px;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.weather-summary{
+    background: #fffdd0;
+    padding: 5px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+#currenttemp{
+    float: left;
+    font-size: 20px;
+}
+
+#conditions{
+    float: left;
+    position: relative;
+    bottom: -50px;
+    left: -260px;
+    font-size: 20px;
+}
+
+#high{
+    font-size: 20px;
+}
+
+#low{
+    font-size: 20px;
+}
+
+#windspeed{
+    font-size: 20px;
+    position: relative;
+    left: 265px;
+}
+
+.icon{
+    position: relative;
+    left: 270px;
+}
+.article{
+    position: relative;
+    top: 20px;
+
+}
+
+.articlepic{
+    float: left;
+    box-shadow: 5px 5px 7px grey;
+    position: relative;
+    right: -30px;
+    bottom: -20px;
+    width: 450px;
+    height: auto;
+}
+
+.town-article{
+    float: right;
+    background-color: #fffdd0;
+    padding: 20px;
+    box-shadow: 5px 5px 7px grey;
+    position: relative;
+    bottom: -30px;
+}
+
+.banner{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.ten{
+    display: none;
+    
+}
+
+table, thead, tr, th{
+    border: 1px solid black;
+    padding: 10px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/*-----gallery-----*/
+.imagegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 0 auto;
+    position: relative;
+    left: 150px;
+}
+
+.imagegrid a:hover{
+    box-shadow: 0 1px 8px black;
+    
+}
+
+/*----navigation bar------*/
+nav {
+    /*background-color: #fffdd0;*/
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 15px;
+    overflow: hidden;
+    background-color: #ffdb9a;
+    display: inline-flex;
+    flex-direction: column;
+    
+}
+nav ul li {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: normal;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #fffdd0;
+}
+nav ul li a:hover {
+    background-color: #000000;
+}
+
+main {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0;
+}
+
+main figure { margin: 0 0 .2rem 2%; width:96%; } /*code from udemy width: 100%; margin: 0;*/
+main figure.landscape img {width: 100%;}
+.contact{
+    background-color: #ffdb9a;
+    padding: 10px;
+}
+
+/*-----storm center-----*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #d0eaff;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: #000000;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    
+}
+
+.top{
+     display: block;
+    padding-top: 1rem;
+    color: #000000;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #ededed;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.bottom{
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+.submit{
+     border: none;
+    background-color: #d0eaff;
+    color: black;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+/*----home page----*/
+
+.story{
+    margin-top: 20px;
+    margin-bottom: 10px;  
+}
+
+#storytext{
+    border: 1px solid black;
+    float:left;
+    margin-right: 50px;
+    text-align: center;
+
+}
+
+#storypic{
+    
+}
+
+.towns{
+    margin-bottom: 480px;
+    margin-top: 50px;
+}
+
+#franklinhome{
+    width: 300px;
+    height: 425px;
+    background-color: aliceblue;
+    float: left;
+    text-align: center;
+    box-shadow: 4px 5px 5px #e0e0e0;
+}
+
+#greenvillehome{
+    width: 300px;
+    height: 425px;
+    background-color: aliceblue;
+    float: left;
+    text-align: center;
+    margin-left: 60px;
+    box-shadow: 4px 5px 5px #e0e0e0;
+}
+
+#springfieldhome{
+    width: 300px;
+    height: 425px;
+    background-color: aliceblue;
+    float: right;
+    text-align: center;
+    box-shadow: 4px 5px 5px #e0e0e0;
+}
+
+.footer-bar{
+    padding: 15px;
+    margin-bottom: -30px;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+}
