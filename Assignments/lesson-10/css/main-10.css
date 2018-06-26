@@ -48,6 +48,7 @@ h2{
     padding: 5px;
     margin-top: 10px;
     box-shadow: 5px 5px 5px grey;
+    text-align: center;
 }
 
 #currenttemp{
@@ -104,6 +105,7 @@ h2{
     box-shadow: 5px 5px 7px grey;
     position: relative;
     bottom: -30px;
+    text-align: center;
 }
 
 .banner{
