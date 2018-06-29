@@ -1,0 +1,159 @@
+@media only screen and (min-width: 64em) {
+
+  /* ---------- nav ---------- */
+
+  nav ul li a {
+    padding: 8px 16px;
+  }
+
+  nav ul.hide {
+    width: 960px;
+  }
+
+  /* ---------- franklin ---------- */
+
+  main {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pic {
+    flex-flow: column nowrap;
+  }
+
+  .town-summary picture{
+    flex: 1 1 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .weather-summary {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex: 1 1 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fafafa;
+    border: 1px solid #6c7c56;
+    box-shadow: 5px 5px 5px #ececec;
+    padding-bottom: 20px;
+  }
+
+  .windspeed {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    padding: 15px;
+  }
+
+  .currenttemp {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    
+  }
+
+  .conditions {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .high {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    width: 150px;
+  }
+
+    .low {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    width: 150px;
+  }
+
+
+  section.forecast {
+    padding: 5px 0px 0px 0px;
+  }
+
+  h3 {
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+    padding: 30px 0px;
+  }
+
+ /* ---------- gallery ---------- */
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .box-shadow:hover {
+    box-shadow: 7px 7px 10px gray;
+    background-color: #fafafa;
+    border: 1px solid #6c7c56;
+  }
+
+/* ---------- home page ---------- */
+
+  div.towns {
+    display: flex;
+  }
+
+  .webdata, .weather {
+    display: flex;
+    flex-flow: column;
+    box-shadow: 5px 5px 5px #ececec;
+    padding: 0px 20px 20px 20px;
+    border: 1px solid #6c7c56;
+    margin: 20px auto 0px auto;
+  }
+
+  .headline {
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+  }
+
+  .headline div {
+    height: 265px;
+    margin-top: 0px;
+  }
+
+  .headline img {
+    padding: 0px 0px 0px 20px;
+  }
+
+  .webdata img {
+    order: 1;
+  }
+
+  .webdata div {
+    min-height: 250px;
+    padding: 0px;
+  }
+
+  .webdata img, .webdata div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .webdata div {
+    box-shadow: none;
+  }
+
+  #Franklin, #Springfield, #Greenville {
+    border: none;
+  }
+
+}

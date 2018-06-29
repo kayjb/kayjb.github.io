@@ -1,26 +1,25 @@
 
 @media only screen and (min-width: 1em) {
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box; /*margin: 0px;*/}  
 
 body {
+  display: flex;
+  flex-flow: column nowrap;
   font-size: 16px;
   font-family: sans-serif;
-  width: auto;
-  padding: 20px;
 }
 
-
-header, nav, main, footer { 
-  max-width: 100%;
-  margin: auto;
-}
+    header, nav, main, footer{
+        width: 100%;
+        margin: auto;
+    }
 
 header {
-    margin-top: 15px;
-    width: 100%;
     background-color: #ffffff;
     text-align: center;
-    padding: 15px;
+    padding: 5px 0px;
+    background-color: bisque;
+    width: 100%;
 }
 
 .logo{
@@ -31,16 +30,16 @@ header {
     width: 200px;
     height: 200px;
     top: 5px;
-    right: -80px;
+    right: -60px;
 }
 
 h1{
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
 }
 
 h2{
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -150,6 +149,9 @@ table, thead, tr, th{
 nav {
     /*background-color: #fffdd0;*/
     margin: auto;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
 }
 
 nav button {
@@ -161,25 +163,25 @@ nav button {
 
 nav ul {
     list-style-type: none;
-    margin: 10px;
-    padding: 15px;
+    padding: 5px;
     overflow: hidden;
     background-color: #ffdb9a;
-    display: inline-flex;
-    flex-direction: column;
+    display: flex;
+    flex-flow: column nowrap;
     
 }
-nav ul li {
+/*nav ul li {
     display: inline-flex;
     justify-content: center;
     text-align: center;
     letter-spacing: normal;
-}
+}*/
 nav ul li a {
-    display: block;
+    display: flex;
+    flex-direction: column;
     color: white;
-    text-align: center;
-    padding: 16px;
+    align-items: center;
+    padding: 8px 16px;
     text-decoration: none;
 }
 nav ul li.active a {
@@ -195,8 +197,8 @@ main {
     padding: 0;
 }
 
-main figure { margin: 0 0 .2rem 2%; width:96%; } /*code from udemy width: 100%; margin: 0;*/
-main figure.landscape img {width: 100%;}
+/*main figure { margin: 0 0 .2rem 2%; width:96%; } /*code from udemy width: 100%; margin: 0;*/
+/*main figure.landscape img {width: 100%;}*/
 .contact{
     background-color: #ffdb9a;
     padding: 10px;
@@ -277,10 +279,6 @@ form label.top input, form label.top select{
     margin-right: 50px;
     text-align: center;
 
-}
-
-#storypic{
-    
 }
 
 .towns{

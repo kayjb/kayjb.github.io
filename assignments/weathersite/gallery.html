@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The Sky Weather | Franklin City</title>
+    <meta name="description" content="The site that offers every day weather coverage.">
+    <meta name="author" content="Kyli Barnes">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="logo">
+        <figure>
+          <img src="images/weather-logo-transparent.png" alt="Weather Site Logo">
+        </figure>
+      </div>
+      <div class="title">
+        <h1>The Sky Weather Center</h1>
+        <div class="subheading">Your everyday weather center</div>
+      </div>
+      <button class="hamburger" onclick="toggleHam()">
+        &equiv;
+      </button>
+    </header>
+
+    <nav>
+      <ul id="navigation" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="franklin.html">Franklin</a></li>
+        <li><a href="greenville.html">Greenville</a></li>
+        <li><a href="springfield.html">Springfield</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li class="active"><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <h2 class="top-heading">Gallery</h2>
+
+      <div class="gallery">
+
+        <div class="box-shadow">
+          <figure>
+            <img src="images/gallery1sq.jpg" alt="Tornado Weather in Franklin">
+            <figcaption>A tornado warning was issued this afternoon in Franklin. It touched down around 6pm and luckily didn't do too much damage.</figcaption>
+          </figure>
+        </div>
+        <div class="box-shadow">
+          <figure>
+            <img src="images/gallery2sq.jpg" alt="Lightning Strikes in Greenville">
+            <figcaption>After a day full of clouds and a pending storm, the lightning finally strikes the city of Greenville. Power outages are occuring throughout the city.</figcaption>
+          </figure>
+        </div>
+        <div class="box-shadow">
+          <figure>
+            <img src="images/gallery3sq.jpg" alt="Rainbow After the Rain in Springfield">
+            <figcaption>The city of Springfield has had to endure several days of rain, but this picture shows the true beauty after the storm.</figcaption>
+          </figure>
+        </div>
+        <div class="box-shadow">
+          <figure>
+            <img src="images/gallery4sq.jpg" alt="A Sunny Day in Franklin">
+            <figcaption>It's a beautiful sunny day in the city of Franklin. Temperatures are slowly rising, just in time for the summer season.</figcaption>
+          </figure>
+        </div>
+        <div class="box-shadow">
+          <figure>
+            <img src="images/gallery5sq.jpg" alt="A Storm Is Brewing in Greenville">
+            <figcaption>Greenville is expecting another major storm within the hour. Make sure to stock up on the essentials before it hits.</figcaption>
+          </figure>
+        </div>
+        <div class="box-shadow">
+          <figure>
+            <img src="images/gallery6sq.jpg" alt="Partly Cloudy Evening in Springfield">
+            <figcaption>It's been a cloudy day for the city of Springfield, but it's looking like it will be a sunny one tomorrow.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+
+    </main>
+
+    <footer>
+      <div class="contact">
+      The Sky <br>
+      123 Storm Ave. <br> 
+      Salt Lake City, UT 84044<br>
+      999.999.9999<br>
+      contact@thesky.com<br>
+    </div>
+    <div class="footer-bar">&copy;2018 | All Rights Reserved | The Sky Weather Site | <span id="contactdate"></span>
+      </div>
+  </footer>
+    <script src="js/date.js"></script>
+    <script src="js/toggleMenu.js"></script>
+</body>
+</html>

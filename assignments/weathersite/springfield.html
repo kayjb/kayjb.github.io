@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The Sky Weather | Franklin City</title>
+    <meta name="description" content="The site that offers every day weather coverage.">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="logo">
+        <picture>
+          <img src="images/weather-logo-transparent.png" alt="Weather Site Logo">
+        </picture>
+        <div class="title">
+          <h1>The Sky Weather</h1>
+          <div class="subheading">Your everyday weather center</div>
+        </div>
+      </div>
+      <button class="hamburger" onclick="toggleHam()">
+        &equiv;
+      </button>
+    </header>
+
+    <nav>
+      <ul id="navigation" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="franklin.html">Franklin</a></li>
+        <li><a href="greenville.html">Greenville</a></li>
+        <li class="active"><a href="springfield.html">Springfield</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main> 
+      <div class="pic">
+
+        <picture>
+          <img class="franklin" src="images/springfield-banner-large.jpg" alt="Sky View of Springfield" sizes="100vw"
+          srcset="images/springfield-banner-small.jpg 400w,
+                 images/springfield-banner-small.jpg 600w,
+                 images/springfield-banner-medium.jpg 800w,
+                 images/springfield-banner-medium.jpg 1024w,
+                 images/springfield-banner-large.jpg 1400w">
+        </picture>
+        </div> 
+          
+        <div>
+          <section class="weather-summary">
+            <h3>Today's Forecast</h3>
+            <p class="currenttemp">
+            Current Temperature: 
+            <span class="current-temp">82.4 &deg;F</span> 
+            </p>  
+            
+            <p class="conditions">
+            Current Conditions: 
+            <span class="condition">Clear Sky</span>
+            </p>
+              
+            <p class="high"> High:
+            <span class="high-temp">82.4 &deg;F</span>  
+            </p>
+              
+            <p class="low"> Low:
+            <span class="low-temp">82.4 &deg;F</span>  
+            </p>
+              
+            <p class="windspeed"> Windspeed: 
+            <span class="windspeed">5.82</span>  
+            </p>
+            
+            <picture>
+            <img class="icon" src="https://openweathermap.org/img/w/01n.png" alt="icon">
+            </picture>         
+            </section>
+      </div>
+          
+
+      <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>91&deg;F</td>
+            <td>94&deg;F</td>
+            <td>92&deg;F</td>
+            <td>89&deg;F</td>
+            <td>92&deg;F</td>
+            <td>94&deg;F</td>
+            <td>91&deg;F</td>
+            <td>96&deg;F</td>
+            <td>98&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+      </section>	  
+
+      <article>
+        <h3>A Springfield Summer</h3>
+        <div class="record">
+          <picture>
+            <img src="images/springfield%20summer.jpg" alt="city">
+          </picture>
+          <p class="town-article">
+            Temperatures back in record territory today with readings in the upper 90’s. Today was also the hottest day so far this summer. This stretch of hot weather should last into the weekend.
+          </p>
+          <p>
+            The Heat Advisories and Excessive Heat Warnings also remain in effect through Saturday. Tonight looks to be clear and warm again with lows in the mid 70’s. Sunny and hot conditions are forecast again Friday and Saturday. High temperatures should be in the mid 90’s both days. Little if any rain is expected.
+          </p>
+          <p>Sunday does feature about a 20% chance for isolated storms. Lows will run in the lower 70’s with highs in the low to mid 90’s. Monday will also feature a chance for isolated storms. Dry weather then returns for much of next week with little change in our temperatures.<br> <br>Read the rest <a href="http://www.ky3.com/weather/">here.</a>
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="contact">
+       The Sky <br>
+       123 Storm Ave. <br> 
+       Salt Lake City, UT 84044<br>
+       999.999.9999<br>
+       contact@thesky.com<br>
+      </div>
+    <div class="footer-bar">&copy;2018 Kyli B. | All Rights Reserved | The Sky Weather Site | <span id="contactdate"></span> | Weather Data courtesy of <a href="https://openweathermap.org/">OpenWeatherMap.org</a>
+      </div>
+    </footer>
+
+      <script src="js/date.js"></script>
+      <script src="js/weather.js"></script>
+      <script src="js/toggleMenu.js"></script>
+      
+  </body>
+</html>

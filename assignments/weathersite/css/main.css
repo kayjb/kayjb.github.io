@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: left;
+  line-height: 1.1rem;
+}
+
+main {
+  margin: 0 4%;
+}
+
+a {
+  color: #0080aa;
+  text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: serif;
+  font-weight: 300;
+  color: #655a54;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ---------- header ---------- */
+
+header {
+  background-color: #6c7c56;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0px;
+  text-align: center;
+}
+
+header img, header h1, header .subheading {
+  padding: 5px 0px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+header h1 {
+  font-family: serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+}
+
+header .subheading {
+  font-size: 0.9rem;
+}
+
+.hamburger {
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding: 0px 3% 0px 0px;
+  line-height: 2.2rem;
+  align-self: flex-start;
+}
+
+/* ---------- nav ---------- */
+
+nav {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0px;
+  overflow: hidden;
+}
+
+nav ul li.active {
+  background-color: #655a54;
+}
+
+nav ul li a {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-top: 1px solid #ffffff;
+  padding: 8px 16px;
+}
+
+nav ul li.active a {
+  color: #ffffff;
+}
+nav ul li a:hover {
+  color: #c0c0c0;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+/* ---------- franklin ---------- */
+
+.banner {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom right;
+  height: 235px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 20px;
+}
+
+.weather-summary {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.currenttemp {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px;
+  text-align: center;
+}
+
+.windspeed {
+  align-self: center;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.high {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px;
+  text-align: center;
+}
+
+.low {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px;
+  text-align: center;
+}
+
+.conditions {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+section.forecast {
+  display: none;
+}
+
+h3 {
+  font-size: 1.250rem;
+  line-height: 1.250rem;
+  padding: 20px 0px;
+}
+
+.record {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.record p {
+  margin-bottom: 1rem;
+}
+
+.record picture img {
+  padding-bottom: 15px;
+  max-width: 100%;
+}
+
+/* ---------- footer ---------- */
+
+.contact {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+}
+.footer-bar {
+  color: #000000;
+  padding: 15px;
+  background-image: url('../images/blue-header-background.png');
+  background-position: center;
+  font-size: .8rem;
+}
+
+.footer-bar a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* ---------- gallery ---------- */
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  padding-bottom: 15px;
+}
+
+.box-shadow figure {
+  margin: 5px;
+  display: table;
+}
+
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+}
+
+.box-shadow {
+  margin: auto;
+}
+
+/* --------- storm center ---------- */
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #6c7c56;
+    border-radius: 10px;
+    padding: 2rem 2%;
+}
+form legend {
+    color: #000000;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    
+}
+
+.top{
+     display: block;
+    padding-top: 1rem;
+    color: #655a54;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #ededed;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.bottom{
+    display: block;
+    padding: .75rem 0;
+    color: #655a54;
+}
+
+.submit{
+     border: none;
+    background-color: #655a54;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+/*---thank you page---*/
+
+#stormsubmission{
+    padding: 20px;
+}
+
+#thanks{
+    text-align: center;
+}
+
+/* ---------- home page ---------- */
+
+.weather {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #fafafa;
+  border: 1px solid #6c7c56;
+}
+
+.weather p {
+  padding: 0px 10px 5px 10px;
+}
+
+.webdata, .headline {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #6c7c56;
+  background-color: #fafafa;
+  margin: 10px 0px;
+  padding: 10px 0px;
+  box-shadow: 5px 5px 5px #ececec;
+}
+
+.webdata img, .webdata div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.webdata img, .headline img {
+  width: 98%;
+  padding: 10px;
+}
+
+.webdata img {
+  max-width: 486px;
+  height: auto;
+}
+.order {
+  display: flex;
+  flex-direction: column-reverse;
+}
+td {
+  padding-right: 1rem;
+}
+
+.webdata img {
+  max-height: 250px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+#Franklin, #Springfield, #Greenville {
+  padding: 0px;
+  line-height: 1rem;
+  flex: 1 1 50%;
+}
+
+

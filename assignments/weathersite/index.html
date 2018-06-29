@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The Sky Weather | Franklin City</title>
+    <meta name="description" content="The site that offers every day weather coverage.">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="logo">
+        <figure>
+          <img src="images/weather-logo-transparent.png" alt="Weather Site Logo">
+        </figure>
+      </div>
+      <div class="title">
+        <h1>The Sky Weather</h1>
+        <div class="subheading">Your everyday weather center</div>
+      </div>
+      <button class="hamburger" onclick="toggleHam()">
+        &equiv;
+      </button>
+    </header>
+
+    <nav>
+      <ul id="navigation" class="hide">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="franklin.html">Franklin</a></li>
+        <li><a href="greenville.html">Greenville</a></li>
+        <li><a href="springfield.html">Springfield</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+  <main>
+
+    <div class="headline">
+      <div class="weather">
+        <h2>Weekend Weather</h2>
+        <p>
+          After a roller coaster of a winter and spats with April (snow) showers, a weekend of high temperatures in the 80s and sunny skies calls for picnics, walks in the park — almost any outdoor activity.
+        </p>
+      </div>
+      <img src="images/homepage%20image.jpg" alt="Sunny Skies Up Ahead for Franklin">
+    </div>
+
+    <div class="towns">
+      <div class="webdata order">
+          <h3><span class="name"></span></h3>
+          <p><span>Town Motto: </span><span class="motto"></span></p>
+          <p><span>Year Founded: </span><span class="yearFounded"></span></p>
+          <p><span>Population: </span><span class="currentPopulation"></span></p>
+          <p><span>Annual Rainfall: </span><span class="averageRainfall"></span></p>
+        <img src="images/gallery3sq.jpg" alt="Franklin">
+        <div id="Franklin"></div>
+      </div>
+
+      <div class="webdata">
+          <h3><span class="name"></span></h3>
+          <p><span>Town Motto: </span><span class="motto"></span></p>
+          <p><span>Year Founded: </span><span class="yearFounded"></span></p>
+          <p><span>Population: </span><span class="currentPopulation"></span></p>
+          <p><span>Annual Rainfall: </span><span class="averageRainfall"></span></p>
+        <div id="Greenville"></div>
+        <img src="images/gallery4sq.jpg" alt="Greenville">
+      </div>
+
+      <div class="webdata order">
+          <h3><span class="name">Springfield</span></h3>
+          <p><span>Town Motto: </span><span class="motto">Where everyone is lifted.</span></p>
+          <p><span>Year Founded: </span><span class="yearFounded">1826</span></p>
+          <p><span>Population: </span><span class="currentPopulation">17852</span></p>
+          <p><span>Annual Rainfall: </span><span class="averageRainfall">17</span></p>
+        <img src="images/gallery6sq.jpg" alt="Springfield">
+        <div id="Springfield"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="contact">
+      The Sky <br>
+      123 Storm Ave. <br> 
+      Salt Lake City, UT 84044<br>
+      999.999.9999<br>
+      contact@thesky.com<br>
+    </div>
+    <div class="footer-bar">&copy;2018 Kyli B. | All Rights Reserved | The Sky Weather Site | <span id="contactdate"></span>| Weather Data courtesy of <a href="https://openweathermap.org/">OpenWeatherMap.org</a></div>
+  </footer>
+
+    <script src="js/date.js"></script>
+    <script src="js/townData.js"></script>
+    <script src="js/toggleMenu.js"></script>
+  </body>
+</html>

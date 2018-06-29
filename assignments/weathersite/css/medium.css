@@ -1,0 +1,193 @@
+@media only screen and (min-width: 37.5em) {
+
+  header, nav, main, footer {
+  }
+
+  /* ---------- header ---------- */
+
+  header {
+    background-image: url('../images/blue-header-background.png');
+    justify-content: center;
+  }
+
+  header img, header h1, header .subheading {
+    padding: 8px 0px;
+  }
+
+  .logo {
+    padding-left: 0px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header .subheading {
+    font-size: 1.2rem;
+  }
+
+  button.hamburger {
+    display: none;
+  }
+
+  /* ---------- nav ---------- */
+
+  nav ul {
+    overflow: hidden;
+    flex-flow: row nowrap;
+  }
+
+  nav ul li {
+    display: inline-flex;
+    padding: 5px 0px;
+    margin: auto;
+  }
+
+  nav ul li a {
+    padding: 8px 10px;
+    border: none;
+  }
+
+  nav ul.hide {
+    display: inline-flex;
+    width: 95%;
+  }
+
+  /* ---------- franklin ---------- */
+
+  main {
+    padding-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .pic {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: flex-start;
+    justify-content: center;
+  }
+
+  .banner {
+    height: 260px;
+  }
+
+  .pic picture {
+    flex: 1 1 50%;
+    padding-top: 20px;
+  }
+
+  .weather-summary {
+    padding: 5px 0px;
+    flex: 1 1 50%;
+  }
+
+  .windspeed {
+    font-size: 1rem;
+    flex: auto;
+  }
+
+  .currenttemp {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  section.forecast {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .forecast th {
+    padding: 5px 0px 5px 5px;
+    background-color: #6c7c56;
+    color: #ffffff;
+    font-weight: 100;
+  }
+
+  .forecast td {
+    padding: 5px 0px 0px 0px;
+    border-bottom: 1px solid #6c7c56;
+  }
+
+  .record {
+    display: inline-block;
+  }
+
+  .record picture img {
+    width: 50%;
+    float: right;
+    padding: 0px 0px 0px  15px;
+  }
+
+  /* ---------- footer ---------- */
+
+  footer {
+    clear: right;
+  }
+
+  /* ---------- gallery ---------- */
+
+  .top-heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+/* ---------- storm center ---------- */
+
+  input.submitbutton {
+    margin: 0rem 0rem 1.5rem 1rem;
+    align-self: flex-start;
+  }
+/* ---------- home ---------- */
+
+  div.towns {
+    display: block;
+  }
+
+  .headline h2 {
+    line-height: 1.8rem;
+  }
+
+  .webdata, .headline {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    border: none;
+    box-shadow: none;
+  }
+
+  .webdata img, .webdata div, .headline img, .headline div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0px 20px;
+  }
+
+  .webdata div, .headline div {
+    box-shadow: 5px 5px 5px #ececec;
+  }
+
+  td {
+    padding-right: 1rem;
+  }
+
+  .webdata img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  #Franklin, #Springfield, #Greenville {
+    padding: 10px;
+    line-height: 1rem;
+    flex: 1 1 50%;
+  }
+}

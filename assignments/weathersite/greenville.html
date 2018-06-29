@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The Sky Weather | Franklin City</title>
+    <meta name="description" content="The site that offers every day weather coverage.">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="logo">
+        <picture>
+          <img src="images/weather-logo-transparent.png" alt="Weather Site Logo">
+        </picture>
+        <div class="title">
+          <h1>The Sky Weather</h1>
+          <div class="subheading">Your everyday weather center</div>
+        </div>
+      </div>
+      <button class="hamburger" onclick="toggleHam()">
+        &equiv;
+      </button>
+    </header>
+
+    <nav>
+      <ul id="navigation" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="franklin.html">Franklin</a></li>
+        <li class="active"><a href="greenville.html">Greenville</a></li>
+        <li><a href="springfield.html">Springfield</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main> 
+      <div class="pic">
+
+        <picture>
+          <img class="franklin" src="images/greenville-banner-large.jpg" alt="Sky View of Greenville" sizes="100vw"
+          srcset="images/greenville-banner-small.jpg 400w,
+                 images/greenville-banner-small.jpg 600w,
+                 images/greenville-banner-medium.jpg 800w,
+                 images/greenville-banner-medium.jpg 1024w,
+                 images/greenville-banner-large.jpg 1400w">
+        </picture>
+        </div> 
+          
+        <div>
+          <section class="weather-summary">
+            <h3>Today's Forecast</h3>
+            <p class="currenttemp">
+            Current Temperature: 
+            <span class="current-temp">72.6 &deg;F</span> 
+            </p>  
+            
+            <p class="conditions">
+            Current Conditions: 
+            <span class="condition">Clear Sky</span>
+            </p>
+              
+            <p class="high"> High:
+            <span class="high-temp">72.6 &deg;F</span>  
+            </p>
+              
+            <p class="low"> Low:
+            <span class="low-temp">72.6 &deg;F</span>  
+            </p>
+              
+            <p class="windspeed"> Windspeed: 
+            <span class="windspeed">4.83</span>  
+            </p>
+            
+            <picture>
+            <img class="icon" src="https://openweathermap.org/img/w/01n.png" alt="icon">
+            </picture>         
+            </section>
+      </div>
+          
+
+      <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>62&deg;F</td>
+            <td>73&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>69&deg;F</td>
+            <td>74&deg;F</td>
+            <td>73&deg;F</td>
+            <td>80&deg;F</td>
+            <td>81&deg;F</td>
+            <td>76&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+      </section>	  
+
+      <article>
+        <h3>Tourism in Greenville</h3>
+        <div class="record">
+          <picture>
+            <img src="images/greenville%20summer.jpg" alt="city">
+          </picture>
+          <p class="town-article">
+            To characterize how pleasant the weather is in Greenville throughout the year, we compute two travel scores.
+          </p>
+          <p>
+            The tourism score favors clear, rainless days with perceived temperatures between 65°F and 80°F. Based on this score, the best times of year to visit Greenville for general outdoor tourist activities are from early May to early June and from late August to mid October, with a peak score in the third week of September.
+          </p>
+          <p>The beach/pool score favors clear, rainless days with perceived temperatures between 75°F and 90°F. Based on this score, the best time of year to visit Greenville for hot-weather activities is from mid June to mid September, with a peak score in the second week of August.<br> <br>To learn more about Greenville, click <a href="https://weatherspark.com/y/17076/Average-Weather-in-Greenville-South-Carolina-United-States-Year-Round">here.</a>
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="contact">
+       The Sky <br>
+       123 Storm Ave. <br> 
+       Salt Lake City, UT 84044<br>
+       999.999.9999<br>
+       contact@thesky.com<br>
+      </div>
+    <div class="footer-bar">&copy;2018 Kyli B. | All Rights Reserved | The Sky Weather Site | <span id="contactdate"></span> | Weather Data courtesy of <a href="https://openweathermap.org/">OpenWeatherMap.org</a>
+      </div>
+    </footer>
+
+      <script src="js/date.js"></script>
+      <script src="js/weather.js"></script>
+      <script src="js/toggleMenu.js"></script>
+      
+  </body>
+</html>
