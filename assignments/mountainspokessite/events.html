@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The Mountain Spoke | Events</title>
+    <meta name="description" content="The Mountain Spoke site is a retail store that specializes in bicycles. Come to this store for all your repairs, questions, and event information.">
+    <meta name="author" content="Kyli Barnes">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="logo">
+        <figure>
+          <img src="images/spokes-logo.png" alt="Mountain Spoke Logo">
+        </figure>
+      </div>
+      <div class="title">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">Your bike specialists</div>
+      </div>
+      <button class="hamburger" onclick="toggleHam()">
+        &equiv;
+      </button>
+    </header>
+
+    <nav>
+      <ul id="navigation" class="hide">
+        <li><a href="spokesindex.html">Home</a></li>
+        <li><a href="tours.html">Adventure Tours</a></li>
+        <li class="active"><a href="events.html">Events</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+        <h2>Cycling The Continental Divide</h2>
+        <p>If you want to bike from Canada to Mexico on a trail that is close to the Continental Divide, the Great Divide Mountain Bike Route is generally considered to be the world's longest mountain bike route, and because of the length and the rugged terrain it's also one of the toughest. Although it traces the same general course, the Great Divide Mountain Bike Route is different from the Continental Divide Trail. The route extends from Antelope Wells, New Mexico (just north of the Mexican border) to Banff, Alberta in Canada, whereas the northern terminus of the Continental Divide hiking trail is at the Canadian border in Glacier National Park.<br>
+
+        <br>Like the hiking trail, the mountain bike route traverses the beautiful grasslands, deserts and alpine terrain of the Rocky Mountains, but most of the ride is on doubletrack forest roads. Whereas walking the Continental Divide can take half of a year or more, the typical thru-biker can complete it in 10 weeks or less (and some extreme riders race it in two weeks or less).<br>
+
+        <br>Cyclists typically start at the northern end of the trail and head south, beginning in late June or July. Any earlier, and you're likely to encounter a good amount of snow in the northern stretch of the trail.<br>
+
+        <br>The trail was developed by the Adventure Cycling Association, which scouted and mapped a route that would intentionally intersect with towns and resupply points roughly every day, so that cyclists don't have to carry too much in the way of food. Even still, water can be in very short supply on several stretches of trail, especially in parts of central Wyoming and New Mexico. If you want to take on the adventure, then come on with us! Registration closes early April.</p>
+        
+        <h2>Registration</h2>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+            <legend>Personal Information</legend>
+                <label class="top">Name*<input type="text" name="fullname" pattern="[A-Za-z]{5,}" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Date of Birth<input type="date" name="date"></label>
+                <label class="top">Home State or Country<input type="text" name="home" placeholder="Montana, USA" required></label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional Information</legend> 
+                <div>Additional Comments: </div>
+                <textarea rows="5" cols="70" class="text"></textarea>
+            </fieldset>
+                
+            <input type="submit" value="Enter Information" class="submit">
+    
+    
+    </form>    
+
+</main>
+
+  <footer>
+       <div class="contact">
+      The Mountain Spoke <br>
+      3950 Valley Commons Dr. <br> 
+      Bozeman, MT 59715<br>
+      555.012.1234<br>
+      contact@themountainspoke.com<br>
+    </div>
+    <div class="footer-bar">&copy;2018 | All Rights Reserved | The Mountain Spoke | Cycling the continental divide information courtesy of <a href="https://adventure.howstuffworks.com/destinations/trail-guides/continental-divide-trail-hiking-guide3.htm">adventure.howstuffworks.com |</a> <span id="contactdate"></span>
+      </div>
+  </footer>
+    <script src="js/date.js"></script>
+    <script src="js/toggleMenu.js"></script>
+</body>
+</html>
