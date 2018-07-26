@@ -98,6 +98,11 @@
         
         
     }
-
+/*--video--*/
+.video{
+    justify-content: center;
+     width: 520px; 
+     height: 440px; 
+}
 
 }
